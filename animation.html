@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <style>
+            
+		#matrix{
+			margin: 1em auto;
+			width: 340px;
+			height: 288px;
+			overflow: hidden;
+			background: #000;
+			background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+			color: rgba(0, 255, 0, .7);
+			text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+			position: relative;	
+		}
+		@-webkit-keyframes fade{
+		    0%   { opacity: 1; }
+		    100% { opacity: 0; }
+		}
+		@-webkit-keyframes fall{
+		   	from {top: -250px;}
+			to 	{top: 300px;}
+		}
+
+
+		#matrix div{
+			position: absolute;	
+			top: 0;
+			/* appearance */
+			-webkit-transform-origin: 0%;
+			-webkit-transform: rotate(90deg); 
+			
+			/* animation */
+			-webkit-animation-name: fall, fade;			
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: normal; 
+			-webkit-animation-timing-function: ease-out;
+		}
+		#matrix span{
+			color: rgb(0, 255, 0);
+			text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+		}
+		.main{
+		    width:auto
+		}
+        .f1{
+			font-size: 1.2em;
+		}
+		.f2{
+			font-size: .9em;
+		}
+		.c1{
+			color: rgba(0, 255, 0, .5);
+		}
+		.d1{
+			-webkit-animation-duration: 4s;
+		}
+		.d2{
+			-webkit-animation-duration: 6s;
+		}
+		.d3{
+			-webkit-animation-duration: 8s;
+		}
+		.d4{
+			-webkit-animation-duration: 10s;
+		}
+		.de{	
+			-webkit-animation-delay: 3s;
+		}
+		#first{
+		    left:5px;
+		}
+		#second{
+		    left:30px;   
+		}
+		#third{
+		    left:60px;
+		}
+		#forth{
+		    left:90px;
+		}
+		#fifth{
+		    left:120px;
+		}
+		#sixth{
+		    left:150px;
+		}
+		#seventh{
+		    left:180px;
+		}
+		#eighth{
+		    left:210px;
+		}
+		#ninth{
+		    left:240px;
+		}
+		#tenth{
+		    left:270px;
+		}
+		#eleventh{
+		    left:300px;
+		}
+		#twelvth{
+		    left:330px;
+		}
+		#dropper{
+		    margin-top:50px;
+		}
+		.topText{
+			text-align: center;
+		}
+		.p001{
+		    text-align:center;
+		    margin-top:50px;
+		}
+		h1{
+		    text-align: center;
+		}
+        </style>
+    </head>
+    <body>
+    <div class="container">	
+    <div class="box" id="header"> 
+         <a class="link" href="homePage.html"><img src="images/fnnlogo.png" id="logo"> </a>
+        <ul id="navbar">
+            <a class="link" href="audio.html"><li>Audio</li></a>
+            <a class="link" href="video.html"><li>Video</li></a>
+            <a class="link" href="animation.html"><li>Animation</li></a>
+        </ul></div>
+    <div id="dropper">
+            <h1>This Page Features Animation Using CSS</h1>
+    <div id="matrix">
+    <div class="d1 c1 de" id="first">101<span>1</span>001010010<span>000</span></div>
+    <div class="d3 f1" id="second">100101000111110100010101010<span>o</span></div>
+    <div class="d1 f2 c1" id="third">10<span>0</span>10010100100101<span>o</span></div>
+    <div class="d4 c1" id="forth">101<span>1</span>001010010<span>000</span></div>
+    <div class="d3 f1" id="fifth">100101000111110100010101010<span>o</span></div>
+    <div class="d1 f2 c1" id="sixth">10<span>0</span>10010100100101<span>o</span></div>
+    <div class="d1 c1 de" id="seventh">101<span>1</span>001010010<span>000</span></div>
+    <div class="d3 f1" id="eighth">100101000111110100010101010<span>o</span></div>
+    <div class="d4 c3 de" id="ninth">10<span>0</span>10010100100101<span>o</span></div>
+    <div class="d1 c1 de" id="tenth">101<span>1</span>001010010<span>000</span></div>
+    <div class="d3 f1" id="eleventh">100101000111110100010101010<span>o</span></div>
+    <div class="d1 f2 c1" id="twelveth">10<span>0</span>10010100100101<span>o</span></div>
+    </div>
+    <p class="p001">divs scrolling from top to bottom, rotated at a 90 degree angle</p>
+</div>
+    <a href="http://edition.cnn.com/?refresh=1" id="realcnn"><div class="box" id="footer"><p>Click here for the real CNN</p> </div></a>
+</div>
+		
+</div>
+
+    </body>
+</html>
